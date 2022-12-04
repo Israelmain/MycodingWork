@@ -1,0 +1,151 @@
+nav,
+header,
+footer {
+    margin: 0;
+    display: block;
+}
+
+body {
+    background-image: url(/images/school.jpeg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    width: 100%;
+}
+
+
+/* ################### NAV ########################### */
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+nav ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+nav ul.topnav li.topnav-right {
+    float: right;
+}
+
+nav ul.topnav li a {
+    color: #666;
+    margin: 0;
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul.topnav li a:hover {
+    background-color: navy;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/* ############### CUSTOM STYLES ###########################*/
+
+.h1 {
+    font-size: 80px;
+    color: gold;
+    text-align: center;
+    text-shadow: 3px 3px 5px blue;
+}
+
+div h3 {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    text-shadow: 3px 3px 5px black;
+
+}
+
+div.register {
+    text-align: center;
+}
+
+div.register button {
+    font-size: 36px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    text-shadow: 3px 3px 5px black;
+}
+
+div.register button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* ######################### MEDIA ############## */
+@media screen and (max-width:680px) {
+
+    body {
+        width: 100%;
+        background-size: cover;
+    }
+
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        text-align: center;
+        float: none;
+    }
+
+    ul.topnav.responsive li.topnav-right {
+        display: inline;
+        text-align: center;
+        float: none;
+    }
+
+
+    ul.topnav.responsive li a {
+        text-align: left;
+    }
+
+
+    h1,
+    h3 {
+        width: 100%;
+    }
+
+    div.register {
+        width: 100%;
+    }
+
+
+}

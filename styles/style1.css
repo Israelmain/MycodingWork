@@ -1,0 +1,335 @@
+/* ########################## Defaults ########################### */
+
+nav,
+header,
+footer {
+    display: block;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+}
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ##################### NAV ######################### */
+
+nav {
+    margin: 0;
+    width: 100%;
+}
+
+nav ul {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    min-height: 16px;
+    padding: 14px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+ul.topnav li a:hover {
+    background-color: blue;
+    color: white;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+
+
+
+/* ####################### Custom Styles###################### */
+
+#section-1-gradient {
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff, #65a5ff);
+    background: -o-linear-gradient(#076dff, #65a5ff);
+    background: -moz-linear-gradient(#076dff, #65a5ff);
+    background: linear-gradient(#076dff, #65a5ff);
+}
+
+div.box {
+    text-align: center;
+    background-color: #fff;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+}
+
+div.screenshot img {
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 7px 10px rgba(0, 0, 0, .15), 2px 2px 4px 2px rgba(0, 0, 0, 1);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+div button.loginbutton {
+    background-color: cadetblue;
+    font-size: 20px;
+    padding: 5px 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+button.learnMore {
+    display: block;
+    margin: auto;
+}
+
+div.icon {
+    width: 100%;
+
+}
+
+div.leftside-col {
+    margin-left: 30%;
+}
+
+div.rightside-col {
+    margin-left: 15%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 50px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+
+}
+
+form h2 {
+    color: #fff;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+footer.footsy {
+    background-color: #666;
+    padding-left: 10%;
+}
+
+footer.footsy h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+
+/* ##################### MEDIA ###################### */
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+        text-align: center;
+        float: none;
+    }
+
+    ul.topnav.responsive li a {
+        text-align: left;
+    }
+
+    h1.section2Header {
+        font-size: 50px;
+    }
+
+    article p {
+        font-size: 25px;
+    }
+
+    .col-6,
+    .col-4,
+    .col-7,
+    .col-5 {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+
+    div.screenshot {
+        margin: 10px;
+    }
+
+    div.leftside-col,
+    div.rightside-col {
+        margin: 15px;
+
+    }
+
+    input[type="text"] {
+        width: 350px;
+    }
+
+    .imageContainer img {
+        width: 370px;
+    }
+
+
+}

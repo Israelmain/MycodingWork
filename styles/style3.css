@@ -1,0 +1,62 @@
+body.signin-body {
+    background: #e6f2ff;
+}
+
+.container.signin-container {
+    margin-top: 5%;
+}
+
+.card {
+    margin: auto;
+    width: 400px;
+}
+
+.signin-card {
+    padding: 4px 0px 4px;
+    background-color: #f4f4f4;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+img.signin-img {
+    padding: 0 2rem 2rem;
+    margin: auto;
+    display: block;
+
+
+}
+
+form.signin-form {
+    max-width: 300px;
+    margin: auto;
+}
+
+input[type="password"] {
+    margin-bottom: 10px;
+}
+
+button.signin-btn {
+    color: #ffffff;
+    background-color: #d64829;
+    width: 100%;
+    margin-bottom: 1.2rem;
+
+}
+
+input::placeholder {
+    font-size: 19px;
+    padding: 4%;
+    font-weight: 500;
+}
+
+button.signin-btn:hover {
+    background-color: #d64829;
+    color: #ffffff;
+}
+
+a.create-new-account {
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}

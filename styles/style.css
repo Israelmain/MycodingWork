@@ -1,0 +1,59 @@
+body {
+    background-color: maroon;
+}
+
+
+.container {
+    display: block;
+    width: 400px;
+    height: auto;
+    background-color: #ccc;
+    border-radius: 7px;
+    margin: auto;
+    padding: 34px;
+}
+
+.inner-Container {
+    margin-left: 20px;
+    text-align: center;
+}
+
+div.inner-Container h1 {
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkcyan;
+    text-shadow: 3px 3px 5px wheat;
+}
+
+div.inner-Container>h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px black;
+}
+
+input {
+    border-radius: 5px;
+    border: 0;
+}
+
+input[type="text"] {
+    padding: 4px;
+    font-size: 12px;
+}
+
+.submit {
+    color: white;
+    background-color: #611c;
+    padding: 2%;
+    margin-top: 15px;
+    text-shadow: 3px 3px 5px black;
+    font-size: 15px;
+}
+
+#answer {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px black;
+}
